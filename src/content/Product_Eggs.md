@@ -8,4 +8,4 @@ isDraft: false
 
 **Free Run Eggs**
 
-$6/dozen
+$7/dozen
