@@ -3,7 +3,7 @@ title: about
 slug: about
 image: /images/coop.png
 isPublish: true
-isDraft: true
+isDraft: false
 ---
 <p class="lead mb-4">
 We are a small family farm in Chilliwack that specializes in fresh, free run chicken eggs and newly hatched chicks. Our hens are happy and well-fed with a high-quality diet, which means they produce healthier and tastier eggs for you to enjoy!
