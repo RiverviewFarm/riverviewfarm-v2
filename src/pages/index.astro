@@ -1,11 +1,11 @@
 ---
 import Layout from "@/layouts/Layout.astro";
-const about = (await Astro.glob('@/content/posts/About.md'))[0];
-const eggs = (await Astro.glob('@/content/posts/Product_Eggs.md'))[0];
-const chicks = (await Astro.glob('@/content/posts/Product_Chicks.md'))[0];
-const location = (await Astro.glob('@/content/posts/Pickup_Location.md'))[0];
-const contact = (await Astro.glob('@/content/posts/Contact.md'))[0];
-const photos = (await Astro.glob('@/content/posts/Photos.md'))[0];
+const about = (await Astro.glob('@/content/About.md'))[0];
+const eggs = (await Astro.glob('@/content/Product_Eggs.md'))[0];
+const chicks = (await Astro.glob('@/content/Product_Chicks.md'))[0];
+const location = (await Astro.glob('@/content/Pickup_Location.md'))[0];
+const contact = (await Astro.glob('@/content/Contact.md'))[0];
+const photos = (await Astro.glob('@/content/Photos.md'))[0];
 ---
 <style>
   #carousel-item-2 {

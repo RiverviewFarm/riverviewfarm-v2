@@ -5,16 +5,53 @@ backend:
   squash_merges: true
   open_authoring: true
 
-publish_mode: editorial_workflow
+publish_mode: simple
 media_folder: public/images
 public_folder: /images
 site_url: "https://riverviewfarm.ca/"
+show_preview_links: false
 
 collections:
-  - name: post
-    label: Posts
-    folder: src/content/posts
-    create: true
+  - name: content
+    label: Content
+    create: false
+    files:
+      - label: "About Section"
+        name: "about"
+        file: "src/content/About.md"
+        fields:
+          - { name: image, label: Image, widget: "image" }
+          - { name: body, label: Body, widget: markdown }
+      - label: "Product Eggs Section"
+        name: "eggs"
+        file: "src/content/Product_Eggs.md"
+        fields:
+          - { name: images, label: Images, widget: "list", field: {label: Image, name: image, widget: image}}
+          - { name: body, label: Body, widget: markdown }
+      - label: "Product Chicks Section"
+        name: "chicks"
+        file: "src/content/Product_Chicks.md"
+        fields:
+          - { name: images, label: Images, widget: "list", field: {label: Image, name: image, widget: image}}
+          - { name: video, label: "YouTube URL", widget: "string" }
+          - { name: body, label: Body, widget: markdown }
+      - label: "Pickup Location Section"
+        name: "location"
+        file: "src/content/Pickup_Location.md"
+        fields:
+          - { name: location, label: "Google Maps Location Link", widget: "string" }
+      - label: "Contact Section"
+        name: "contact"
+        file: "src/content/Contact.md"
+        fields:
+          - { name: body, label: Body, widget: markdown }
+      - label: "Photos Section"
+        name: "photos"
+        file: "src/content/Photos.md"
+        fields:
+          - { name: images, label: Images, widget: "list", field: {label: Image, name: image, widget: image}}
+          - { name: video, label: "YouTube URL", widget: "string" }
+
     format: frontmatter
     preview_path: /
     fields:
