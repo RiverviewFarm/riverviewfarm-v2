@@ -1,7 +1,7 @@
 ---
 title: about
 slug: about
-image: /images/ae57b820-04ff-11ee-bcf7-ba4d731560b7.jpeg
+image: https://cdn.britannica.com/18/137318-050-29F7072E/rooster-Rhode-Island-Red-roosters-chicken-domestication.jpg
 isPublish: true
 isDraft: false
 ---
