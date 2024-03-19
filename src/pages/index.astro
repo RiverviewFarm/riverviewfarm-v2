@@ -1,18 +1,13 @@
 ---
-import { getCollection } from "astro:content";
-
 import Layout from "@/layouts/Layout.astro";
-import SocialLinks from "@/components/SocialLinks.astro";
-import PostCard from "@/components/PostCard.astro";
-import ProjectCard from "@/components/ProjectCard.astro";
-import Link from "@/components/shared/Link.astro";
-import convertAsteriskToStrongTag from "@/utils/convertAsteriskToStrongTag";
-
-import presentation from "@/data/presentation";
-import projects from "@/data/projects";
-
-const posts = await getCollection("posts");
+const about = (await Astro.glob('@/content/posts/About.md'))[0];
 ---
+<style>
+  #carousel-item-2 {
+    /*Rosemary: Replace the image of the Header background here*/
+    background-image: url('https://lh3.googleusercontent.com/pw/AM-JKLVavgzqTdqlb6t3p9oZ6ljW_B7TuMjNB2HYdTBrsLkmsB59oRxXzIVSJTIAgK-WDL6ejZtnaWzHAdl5pMvJDY7Xa0fKj0OvMFMtqnHwOUQA4fz5cxY_9OsAa8UQK-ce4xPp_Ti0T1shTEPgTJtwot0Kow=w1044-h837-no?authuser=0');
+  }
+</style>
 
 <Layout>
   <div
@@ -68,68 +63,13 @@ const posts = await getCollection("posts");
     <!-- About section -->
     <div id="about" class="row">
       <div class="col-md-5 mb-3">
-        <img src="images/hello.jpg" class="img-thumbnail" />
+        <img src={about.frontmatter.image} class="img-thumbnail" />
       </div>
 
-      <!--Rosemary: Change only the white text here for the About section-->
       <div class="col-md-7">
-        <h2>About</h2>
-        <p class="lead">
-          We are a small family farm in Chilliwack that specializes in fresh,
-          free run chicken eggs and newly hatched chicks. Our hens are happy and
-          well-fed with a high-quality diet, which means they produce healthier
-          and tastier eggs for you to enjoy!
-        </p>
+        <h2 class="h2">About</h2>
 
-        <p class="lead">
-          We are a family-run farm, so please call ahead to ensure there will be
-          someone to greet you when you arrive! Our phone lines are open during
-          these hours:
-        </p>
-
-        <p>
-          <table class="lead">
-            <tr>
-              <th>Sun</th>
-              <td>Closed</td>
-            </tr>
-            <tr>
-              <th>Mon</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Tues</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Wed</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Thurs</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Fri</th>
-              <td>9am - 5pm</td>
-            </tr>
-            <tr>
-              <th>Sat</th>
-              <td>9am - 5pm</td>
-            </tr>
-          </table>
-        </p>
-
-        <p class="lead">
-          <a href="tel:+1-778-386-9822"
-            ><i class="fas fa-phone-alt"></i> (778) 386-9822</a>
-        </p>
-
-        <p class="lead">
-          <a href="https://goo.gl/maps/s19UbpHd9cpuCYDe9"
-            ><i class="fas fa-map-marker-alt"></i> 42831 Old Orchard Road<br
-            />Chilliwack, BC</a>
-        </p>
+        <about.Content />
       </div>
     </div>
 

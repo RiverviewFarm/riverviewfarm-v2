@@ -2,21 +2,60 @@
 title: "about"
 slug: "about"
 isPublish: true
+image: 'images/hello.jpg'
 ---
 
+<p class="lead mb-4">
 We are a small family farm in Chilliwack that specializes in fresh, free run chicken eggs and newly hatched chicks. Our hens are happy and well-fed with a high-quality diet, which means they produce healthier and tastier eggs for you to enjoy!
+</p>
 
+<p class="lead mb-4">
 We are a family-run farm, so please call ahead to ensure there will be someone to greet you when you arrive! Our phone lines are open during these hours:
+</p>
 
-| Sun | Closed |
-| Mon | 9am - 5pm |
-| Tue | 9am - 5pm |
-| Wed | 9am - 5pm |
-| Thu | 9am - 5pm |
-| Fri | 9am - 5pm |
-| Sat | 9am - 5pm |
+<table class='lead mb-4'>
+  <tr>
+    <th>Sun</th>
+    <td>Closed</td>
+  </tr>
+  <tr>
+    <th>Mon</th>
+    <td>9am - 5pm</td>
+  </tr>
+  <tr>
+    <th>Tue</th>
+    <td>9am - 5pm</td>
+  </tr>
+  <tr>
+    <th>Wed</th>
+    <td>9am - 5pm</td>
+  </tr>
+  <tr>
+    <th>Thu</th>
+    <td>9am - 5pm</td>
+  </tr>
+  <tr>
+    <th>Fri</th>
+    <td>9am - 5pm</td>
+  </tr>
+  <tr>
+    <th>Sat</th>
+    <td>9am - 5pm</td>
+  </tr>
+</table>
 
-Call us: 778-386-9822
 
-Address: 42831 Old Orchard Road
-Chilliwack, BC
+<p class="lead mb-4">
+  <a href="tel:+1-778-386-9822">
+    <i class="fas fa-phone-alt mr-2"></i>
+    (778) 386-9822
+  </a>
+</p>
+
+<p class="lead">
+  <a href="https://goo.gl/maps/s19UbpHd9cpuCYDe9">
+    <i class="fas fa-map-marker-alt mr-2"></i>
+    42831 Old Orchard Road<br>
+    Chilliwack, BC
+  </a>
+</p>

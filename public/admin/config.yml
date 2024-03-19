@@ -19,6 +19,7 @@ collections:
     preview_path: /
     fields:
       - { name: title, label: Title }
+      - { name: image, label: Image, widget: "image" }
       - {label: "Publish", name: "isPublish", widget: "boolean", default: true}
       - {label: "Draft", name: "isDraft", widget: "boolean", default: false}
       - { name: body, label: Body, widget: markdown }
