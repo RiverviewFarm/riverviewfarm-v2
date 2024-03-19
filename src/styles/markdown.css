@@ -1,0 +1,9 @@
+.markdown {
+  @apply space-y-4;
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+
+.markdown strong {
+  @apply font-semibold;
+}

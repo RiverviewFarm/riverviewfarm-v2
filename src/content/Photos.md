@@ -7,6 +7,4 @@ isPublish: true
 isDraft: false
 ---
 
-<h5 class="h5">
 Meet some of our hens!
-</h5>

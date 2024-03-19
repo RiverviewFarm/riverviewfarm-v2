@@ -6,6 +6,9 @@ const chicks = (await Astro.glob('@/content/Product_Chicks.md'))[0];
 const location = (await Astro.glob('@/content/Pickup_Location.md'))[0];
 const contact = (await Astro.glob('@/content/Contact.md'))[0];
 const photos = (await Astro.glob('@/content/Photos.md'))[0];
+
+const aboutHTML = about.compiledContent();
+import "@/styles/markdown.css";
 ---
 <style>
   #carousel-item-2 {
@@ -73,8 +76,9 @@ const photos = (await Astro.glob('@/content/Photos.md'))[0];
 
       <div class="col-md-7 space-y-4">
         <h2 class="h2">About</h2>
-
-        <about.Content />
+        <div class="markdown">
+          <about.Content/>
+        </div>
       </div>
     </div>
 
@@ -84,14 +88,18 @@ const photos = (await Astro.glob('@/content/Photos.md'))[0];
     <!--Rosemary: Change only the white text here for the Products section-->
     <div id="products" class="row">
       <h2 class="h2 mb-4 text-center">Our Products</h2>
-      <eggs.Content />
+      <div class="markdown text-center mb-4">
+        <eggs.Content />
+      </div>
       { eggs.frontmatter.images.map((image: string) => (
         <div class="col-md-4 mb-3">
           <img src={image} class="img-thumbnail" />
         </div>
       ))}
 
-     <chicks.Content />
+      <div class="markdown text-center mb-4">
+        <chicks.Content />
+      </div>
      { chicks.frontmatter.images.map((image: string) => (
         <div class="col-md-4 mb-3">
           <img src={image} class="img-thumbnail" />
@@ -134,7 +142,9 @@ const photos = (await Astro.glob('@/content/Photos.md'))[0];
     <!--Rosemary: Change only the white text here for the Contact Us section-->
     <div id="contact" class="row text-center space-y-4">
       <h2 class="h2 text-center">Contact Us</h2>
-      <contact.Content />
+      <div class="markdown text-center mb-4">
+        <contact.Content />
+      </div>
 
       <!---Contact Form-->
       <div class="col-lg-10 col-xl-6 col-center">
@@ -225,7 +235,10 @@ const photos = (await Astro.glob('@/content/Photos.md'))[0];
 
     <div id="photos" class="row text-center space-y-4">
       <h2 class="h2 text-center">Photos</h2>
-      <photos.Content />
+
+      <div class="markdown text-center mb-4">
+        <photos.Content />
+      </div>
 
        {photos.frontmatter.images.map((image: string) => (
         <div class="col-md-4 mb-3">
