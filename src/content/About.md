@@ -1,7 +1,7 @@
 ---
 title: about
 slug: about
-image: /images/coop.png
+image: /images/hello.jpg
 isPublish: true
 isDraft: false
 ---
@@ -31,7 +31,7 @@ We are a family-run farm, so please call ahead to ensure there will be someone t
     <td>9am - 5pm</td>
   </tr>
   <tr>
-    <th>Thur</th>
+    <th>Thu</th>
     <td>9am - 5pm</td>
   </tr>
   <tr>
