@@ -1,10 +1,10 @@
 ---
-title: "about"
-slug: "about"
+title: about
+slug: about
+image: /images/coop.png
 isPublish: true
-image: 'images/hello.jpg'
+isDraft: false
 ---
-
 <p class="lead mb-4">
 We are a small family farm in Chilliwack that specializes in fresh, free run chicken eggs and newly hatched chicks. Our hens are happy and well-fed with a high-quality diet, which means they produce healthier and tastier eggs for you to enjoy!
 </p>
@@ -31,7 +31,7 @@ We are a family-run farm, so please call ahead to ensure there will be someone t
     <td>9am - 5pm</td>
   </tr>
   <tr>
-    <th>Thu</th>
+    <th>Thur</th>
     <td>9am - 5pm</td>
   </tr>
   <tr>
@@ -43,7 +43,6 @@ We are a family-run farm, so please call ahead to ensure there will be someone t
     <td>9am - 5pm</td>
   </tr>
 </table>
-
 
 <p class="lead mb-4">
   <a href="tel:+1-778-386-9822">
