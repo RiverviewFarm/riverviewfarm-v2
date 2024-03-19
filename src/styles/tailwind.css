@@ -4,15 +4,15 @@
 
 body {
   font-family: 'Noto Sans', sans-serif !important;
-  background-color: #283618;
+  background-color: #283618 !important;
 }
 a {
-  text-decoration: none;
-  color: inherit;
+  text-decoration: none !important;
+  color: inherit !important;
 }
 a:hover {
-  text-decoration: none;
-  color: #DDA15E;
+  text-decoration: none !important;
+  color: #DDA15E !important;
 }
 h2 {
   color: #99581E;
