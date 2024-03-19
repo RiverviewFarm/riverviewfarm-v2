@@ -51,6 +51,6 @@ We are a family-run farm, so please call ahead to ensure there will be someone t
   <a href="https://goo.gl/maps/s19UbpHd9cpuCYDe9">
     <i class="fas fa-map-marker-alt mr-2"></i>
     42831 Old Orchard Road<br>
-    Chilliwack, BCA
+    Chilliwack, BC
   </a>
 </p>
