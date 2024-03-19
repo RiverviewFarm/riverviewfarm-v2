@@ -3,7 +3,6 @@ backend:
   repo: RiverviewFarm/riverviewfarm-v2
   branch: main
   squash_merges: true
-  open_authoring: true
 
 publish_mode: simple
 media_folder: public/images
