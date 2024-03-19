@@ -1,7 +1,7 @@
 ---
 title: about
 slug: about
-image: /images/hello.jpg
+image: /images/ae57b820-04ff-11ee-bcf7-ba4d731560b7.jpeg
 isPublish: true
 isDraft: false
 ---
